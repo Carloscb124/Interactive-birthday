@@ -1,0 +1,98 @@
+<!doctype>
+<html>
+<head>
+
+	<!-- Place this data between the <head> tags of your website -->
+	<title>Feliz Aniversário!</title>
+	<meta name="description" content="Um minijogo especial de aniversário."/>
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Feliz Aniversário!">
+	<meta itemprop="description" content="Um minijogo especial de aniversário.">
+	<meta itemprop="image" content="http://ncase.me/door/thumbnail.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Feliz Aniversário!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://ncase.me/door/">
+	<meta property="og:image" content="http://ncase.me/door/thumbnail.png">
+	<meta property="og:description" content="Um minijogo especial de aniversário.">
+	<meta property="og:site_name" content="Feliz Aniversário!">
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="css/index.css"> 
+
+</head>
+<body>
+
+	<div id="loading"><div>CARREGANDO</div></div>
+
+	<div id="whole_container">
+
+		<!--span style="display:none"-->
+		<div id="screen_one">
+			<canvas id="canvas_intro"></canvas>
+		</div>
+
+		<div id="screen_two">
+			<div id="canvas_container">
+
+				<canvas id="canvas_1" width="300" height="380"></canvas>
+				<canvas id="canvas_2" width="300" height="380"></canvas>
+				<canvas id="canvas_3" width="300" height="380" style="margin:0"></canvas>
+				
+				<div id="valentines_text"></div>
+				<div id="rewind_text">retrocedendo...</div>
+				<div id="replay_text">reproduzindo...</div>
+
+			</div>
+		</div>
+		<!--/span-->
+
+		<div id="screen_three">
+
+			<div id="bottom">
+				<a href="https://exemplo.com">feito com amor</a>
+			</div>
+
+			<div id="end_container">
+				
+				<span style="font-size:38px;">Feliz Aniversário, Meu Amor!</span>
+				<input id="your_message" placeholder="(não ta funcionado aqui)"></input>
+				
+				<span>Espero que tenha gostado deste presentinho especial!</span>
+				<input id="your_link" readonly></input>
+
+				<span style="font-size:24px;color:#ff69b4;">
+					Que seu dia seja tão incrível quanto você é para mim!
+				</span>
+
+				<span style="font-size:20px;">
+					Cada momento ao seu lado é um presente. Que este novo ano de vida traga 
+					<br>
+					toda a felicidade, amor e realizações que você merece.
+				</span>
+
+				<br>
+				<br>
+
+				<span style="font-size:30px;color:#ff1493;">
+					Te amo mais que tudo! &lt;3
+				</span>
+
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+<script src="js/Key.js"></script>
+<script src="js/game.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/soundjs-0.6.0.min.js"></script>
+
+<script>
+//STAGE = 4;
+</script>
