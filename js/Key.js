@@ -32,3 +32,56 @@
 	window.addEventListener("keyup",onKeyUp,false);
 
 })(window);
+
+// js/Key.js - Versão Mobile
+const Key = {
+  _pressed: {},
+  _touchStart: null,
+
+  left: false,
+  right: false,
+  up: false,
+  down: false,
+
+  setupMobileControls: function() {
+    // Área sensível ao toque
+    const touchArea = document.getElementById('canvas_container');
+    
+    touchArea.addEventListener('touchstart', (e) => {
+      this._touchStart = {
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY
+      };
+    }, false);
+
+    touchArea.addEventListener('touchmove', (e) => {
+      if (!this._touchStart) return;
+      
+      const touch = e.touches[0];
+      const dx = touch.clientX - this._touchStart.x;
+      const dy = touch.clientY - this._touchStart.y;
+      
+      // Reset all keys
+      this.left = this.right = this.up = this.down = false;
+      
+      // Determine direction based on movement
+      if (Math.abs(dx) > Math.abs(dy)) {
+        if (dx > 10) this.right = true;
+        if (dx < -10) this.left = true;
+      } else {
+        if (dy > 10) this.down = true;
+        if (dy < -10) this.up = true;
+      }
+      
+      e.preventDefault();
+    }, false);
+
+    touchArea.addEventListener('touchend', () => {
+      this._touchStart = null;
+      this.left = this.right = this.up = this.down = false;
+    }, false);
+  }
+};
+
+// Inicializa os controles mobile quando o script carrega
+Key.setupMobileControls();
