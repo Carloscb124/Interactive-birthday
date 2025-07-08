@@ -1,21 +1,40 @@
-![](https://raw.githubusercontent.com/ncase/door/gh-pages/thumbnail.png)
+# 🎮 It's a Door-able
 
-**Designed & developed by [Nicky Case](http://ncase.me/) in two-ish days.**
+![Game Screenshot](thumbnail.png)
 
-Thank you to my playtesters: Amber, Lana, Rio, Sakura.
+**"It's a Door-able"** é um mini game interativo com um conceito simples, charmoso e envolvente. Criado como parte de um projeto especial, ele oferece uma experiência rápida e divertida de cerca de **1 minuto**.
 
-All code and art dedicated to the public domain. 
-If you'd like to help me keep making free, open-source playable silliness,
-please check out [my Patreon!](http://patreon.com/ncase) Thank you. <3
+Neste jogo, você deve mover seu personagem, pegar a chave e alcançar a porta. Tudo isso com um visual minimalista e intuitivo.
 
 ---
 
-**Asset Credits:**
+## 🕹️ Como jogar
 
-* Jazz Music: http://www.newgrounds.com/audio/listen/522444 (CC-BY-NC)
-* SFX Error: http://freesound.org/people/Autistic%20Lucario/sounds/142608/ (CC-BY)
-* SFX Step: http://freesound.org/people/Phil25/sounds/208103/ (CC ZERO)
-* SFX Ding: http://freesound.org/people/Aiwha/sounds/196106/ (CC-BY)
-* SFX Rewind: http://freesound.org/people/kasa90/sounds/174363/ (CC ZERO)
-* SFX Unlock: http://freesound.org/people/keweldog/sounds/181140/ (CC ZERO)
-* Social Media Icons: http://customizr.net/icons/
+- **Setas do teclado**: movimentam o personagem  
+- **Objetivo**: Pegue a chave e alcance a porta  
+- **Duração**: Aproximadamente 1 minuto  
+
+---
+
+## 🧠 Conceito
+
+O título do jogo é um trocadilho em inglês:  
+**“It’s adorable”** → **“It’s a door-able”**, brincando com a palavra **door** (porta) e o estilo fofo do game.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- Lógica de interação baseada em eventos de teclado  
+
+---
+
+## 📁 Como executar localmente
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Carloscb124/Interactive-birthday.git
